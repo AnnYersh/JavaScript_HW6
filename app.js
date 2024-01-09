@@ -29,9 +29,9 @@ for (i=0; i<Infinity; i++) {
         if (arrayDeed[0]=='add') {
             arr.push(b)
         } else if (arrayDeed[0]=='del') {
-            for (i=0; i<arr.length; i++) {
+            for (key=0; key<arr.length; key++) {
                 for (let key in arr) {
-                    arr[key] == b ? arr.splice (key,1) : ''
+                    arr[key] == b ? arr.splice (key,1) : ''                
                 } 
             } 
         } else if (arrayDeed[0]=='stop') {
